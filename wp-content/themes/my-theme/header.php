@@ -11,25 +11,13 @@
 
 <body <?php echo body_class() ?>>
 
-    <header>
-        <nav class="nav">
-            <ul>
-                <li>
-                    <a href="#">Home</a>
-                </li>
+    <header>    
 
-                <li>
-                    <a href="#">About</a>
-                </li>
-
-                <li>
-                    <a href="#">Company</a>
-                </li>
-
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-            </ul>
-        </nav>
+    <?php 
+        $args = array(
+            'theme_location' => 'header_menu'
+        );
+        wp_nav_menu( $args );
+    ?>
 
     </header>
