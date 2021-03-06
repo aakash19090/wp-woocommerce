@@ -15,8 +15,10 @@
 
     <?php 
         $args = array(
-            'theme_location' => 'header_menu'
-        );
+            'menu' => 'header_menu',
+            "container" => false, // Wraps the menu UL into a container div
+            'items_wrap' => '<ul class="custom_class">%3$s</ul>' // Give Custom Structure to Menu LIs
+        );  
         wp_nav_menu( $args );
     ?>
 
